@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Monsterrat, Arial, sans-serif;
+    max-width: 1920px;
+    
+}
+
+@font-face{
+    font-family: "Monsterrat";
+    src: url(style/fonts/monsterrat/Montserrat-Light.woff),
+                url(style/fonts/monsterrat/Montserrat-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Raleway";
+    src: url(fonts/raleway/Raleway-Regular.woff),
+         url(fonts/raleway/Raleway-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Raleway";
+    src: url(fonts/raleway/Raleway-SemiBold.woff),
+         url(fonts/raleway/Raleway-Bold.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+.home{
+    /*background: url(style/images/photo.webp),
+        url(style/images/photo.png) no-repeat;
+    background-size: 1920px 1024px;
+    background-position: center;
+    background-blend-mode: normal;*/
+}
+
+.home_text{
+    /* Style for "Portfolio" 
+width: 589px;
+height: 50px;
+color: #ffffff;
+font-family: "Raleway - Extra Bold";
+font-size: 52px;
+font-weight: 400;*/
+}
+
+.home_block{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.home_title{
+    /*
+   width: 456px;
+height: 34px;
+color: #ffffff;
+font-family: Raleway;
+font-size: 36px;
+font-weight: 500; */
+}
+
+.home_color{
+    
+}
