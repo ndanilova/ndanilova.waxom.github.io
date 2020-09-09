@@ -67,6 +67,7 @@
 .home_links{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     width: 52%;
     flex-wrap: wrap;
     margin: 55px 0 0 200px;
@@ -162,7 +163,7 @@ margin-right: 20px;
 .home_contact{
   
 width: 55px;
-height: 10%;
+height: 24px;
 color: #ffffff; 
 font-family: Montserrat;
 font-size: 14px;
@@ -174,17 +175,21 @@ margin-right: 20px;
 .home_basket{
 
 width: 18px;
-height: 10%;
+height: 24px;
 margin-right: 20px;
     padding: 0 0 2em 0;
+    background-color: transparent;
+    border: 0;
 
     
 }
 
 .home_search{
    width: 24px;
-height: 10%;
+height: 24px;
     padding: 0 0 2em 0;
+    background-color: transparent;
+    border: 0;
     
 }
 
