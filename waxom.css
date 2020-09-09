@@ -57,6 +57,10 @@
     
 }
 
+.line{
+    text-decoration: none;
+}
+
 .home_waxom_logo{
     height: 56px;
     width: 181px;
@@ -169,7 +173,7 @@ font-family: Montserrat;
 font-size: 14px;
 font-weight: 300;
 margin-right: 20px;
-  padding: 0 0 2em 0;  
+  padding: 0 2em 2em 0;  
 }
 
 .home_basket{
