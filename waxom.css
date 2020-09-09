@@ -209,7 +209,7 @@ height: 10%;
 
 .home_button_left{
      display: flex;
-    width: 20% 40px;
+    width: 40px;
     height: 73px;
     justify-content: flex-start;
     flex-direction: column;
@@ -218,7 +218,7 @@ height: 10%;
 
 .home_arrow_right{
     display: flex;
-    width: 20% 40px;
+    width: 40px;
     height: 73px;
     justify-content: flex-end;
     flex-direction: column;
