@@ -2,69 +2,527 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Monsterrat, Arial, sans-serif;
     max-width: 1920px;
-    
+    font-family: Montserrat;
 }
 
 @font-face{
-    font-family: "Monsterrat";
-    src: url(style/fonts/monsterrat/Montserrat-Light.woff),
-                url(style/fonts/monsterrat/Montserrat-Light.ttf),sans-serif;
+    font-family: Montserrat;
+    src: url(style/fonts/monsterrat/Montserrat-Light.woff);
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face{
-    font-family: "Raleway";
-    src: url(fonts/raleway/Raleway-Regular.woff),
-         url(fonts/raleway/Raleway-Regular.ttf),sans-serif;
+    font-family: Raleway;
+    src: url(style/fonts/raleway/Raleway-Regular.woff);
+         
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face{
-    font-family: "Raleway";
-    src: url(fonts/raleway/Raleway-SemiBold.woff),
-         url(fonts/raleway/Raleway-Bold.ttf),sans-serif;
+    font-family: Raleway;
+    src: url(style/fonts/raleway/Raleway-SemiBold.woff);
+        
     font-weight: 500;
     font-style: normal;
 }
 
-.home{
-    /*background: url(style/images/photo.webp),
-        url(style/images/photo.png) no-repeat;
-    background-size: 1920px 1024px;
-    background-position: center;
-    background-blend-mode: normal;*/
+@font-face{
+    font-family: Raleway;
+    src: url(style/fonts/raleway/Raleway-ExtraBold.woff);
+    font-weight: 800;
 }
 
-.home_text{
-    /* Style for "Portfolio" 
-width: 589px;
-height: 50px;
+.home{
+   background-image: url(style/images/Photo.webp);
+    background-color: #464441;
+    
+}
+
+.home_top_wrap{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.home_img_wrap{
+    display: flex;
+    justify-content: flex-start;
+    width: 10%;
+    flex-wrap: wrap;
+    margin: 40px 0 0 200px;
+    
+}
+
+.home_waxom_logo{
+    height: 56px;
+    width: 181px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home_links{
+    display: flex;
+    justify-content: flex-end;
+    width: 52%;
+    flex-wrap: wrap;
+    margin: 55px 0 0 200px;
+    
+    
+}
+
+.home_home{
+width: 42px;
+height: 10%;
 color: #ffffff;
-font-family: "Raleway - Extra Bold";
-font-size: 52px;
-font-weight: 400;*/
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 300;
+margin-right: 20px;
+padding: 0 0 2em 0;
+}
+
+.home_about_us{
+width: 64px;
+height: 10%;
+color: #ffffff; 
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 300;
+margin-right: 20px;
+    padding: 0 0 2em 0;
+}
+
+.home_portfolio{
+   
+width: 57px;
+height: 10%;
+color: #ffffff;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 300;
+margin-right: 20px;
+    padding: 0 0 2em 0;
+    
+}
+
+.home_features{
+  
+width: 58px;
+height: 10%;
+color: #ffffff; 
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 300;
+margin-right: 20px;
+   padding: 0 0 2em 0;
+}
+
+
+.home_blog{
+  
+width: 30px;
+height: 10%;
+color: #ffffff; 
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 300;
+margin-right: 20px;
+    padding: 0 0 2em 0;
+}
+
+.home_pricing{
+   
+width: 46px;
+height: 10%;
+color: #ffffff; 
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 300;
+margin-right: 20px;
+    
+    padding: 0 0 2em 0;
+}
+
+.home_shortcodes{
+  
+width: 78px;
+height: 10%;
+color: #ffffff;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 300;
+margin-right: 20px;
+ padding: 0 0 2em 0;  
+}
+
+.home_contact{
+  
+width: 55px;
+height: 10%;
+color: #ffffff; 
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 300;
+margin-right: 20px;
+  padding: 0 0 2em 0;  
+}
+
+.home_basket{
+
+width: 18px;
+height: 10%;
+margin-right: 20px;
+    padding: 0 0 2em 0;
+
+    
+}
+
+.home_search{
+   width: 24px;
+height: 10%;
+    padding: 0 0 2em 0;
+    
+}
+
+.home_center{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 320px 0 200px 5%;
 }
 
 .home_block{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
     flex-direction: column;
+    width: 39%; 
+    
+}
+
+.home_button_left{
+     display: flex;
+    width: 20% 40px;
+    height: 73px;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.home_arrow_right{
+    display: flex;
+    width: 20% 40px;
+    height: 73px;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .home_title{
-    /*
-   width: 456px;
-height: 34px;
+    
+height: 10%;
 color: #ffffff;
 font-family: Raleway;
 font-size: 36px;
-font-weight: 500; */
+font-weight: 400;
+ padding: 0;
+
 }
 
-.home_color{
+h1{
+   
+height: 15%;
+color: #ffffff;
+font-family: "Raleway";
+font-size: 52px;
+font-weight: 800;
+padding:  0;
+}
+
+
+.home_text{
+text-align: center;
+margin: 18px 0 0 0;
+height: 15%;
+color: #ffffff;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 300;
+line-height: 24px;
+    
     
 }
+
+.home_get{
+    
+margin: 20px 0 0 33%;
+color: white;
+width: 30%;
+height: 53px;
+border-bottom: 3px solid #736357;
+border-top:0;
+border-left:0;
+border-right:0;
+border-radius: 3px;
+background-color: #998675;
+font-family: Raleway;
+font-weight: 500;
+font-size: 14px;   
+}
+
+.home_get_button{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home_little_buttons{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 2em 3em 0;
+}
+
+.little_button1{
+    border: 5px solid #979595;
+    border-radius: 50%;
+    width: 11px;
+    height: 11px;
+    background-color: #979595;
+    margin: 0 8px 0 0;
+        
+}
+
+.little_button2{
+    border: 5px solid #979595;
+    border-radius: 50%;
+    width: 11px;
+    height: 11px;
+    background-color: #979595;
+    margin: 0 8px 0 0;
+        
+}
+
+.little_button3{
+    border: 5px solid #979595;
+    border-radius: 50%;
+    width: 11px;
+    height: 11px;
+    background-color: #979595;
+    margin: 0 8px 0 0;
+        
+}
+
+.little_button4{
+    border: 5px solid #979595;
+    border-radius: 50%;
+    width: 11px;
+    height: 11px;
+    background-color: #979595;
+    margin: 0 8px 0 0;
+        
+}
+
+.little_button5{
+    border: 5px solid #979595;
+    border-radius: 50%;
+    width: 11px;
+    height: 11px;
+    background-color: #979595;
+    
+        
+}
+
+.about_us{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 4% 0 4% 10%;
+    width: 90%;
+    background-color: white;
+}
+
+.about_us_development,
+.about_us_customization,
+.about_us_marketing,
+.about_us_design{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 23%;
+    text-align: center;
+    
+    
+}
+
+.about_us_title{
+    color: #555555;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.about_us img{
+    padding-bottom: 7%;
+    fill: #555555;
+}
+
+.about_us_text{
+color: #8c8c8c;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 300;
+line-height: 24px;
+}
+
+.portfolio{
+   padding: 5% 0 0 0;
+    background-color: #fbfaf8;
+    
+}
+
+.portfolio_text{
+    display: flex;
+     width: 50%;
+    margin: 0 0 0 25%;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.portfoio_title{
+height: 25%;
+     padding-bottom: 3%;
+color: #555555;
+font-family: Raleway;
+font-size: 30px;
+font-weight: 500;
+}
+
+.portfolio_description{
+
+height: 25%;
+    padding-bottom: 5%;
+color: #8c8c8c;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 300;
+line-height: 28px;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.images img{
+   width: 50%;
+    height: 20%;
+    position: relative;
+    
+}
+
+.portfolio_img_left,
+.portfolio_img_right{
+  z-index: 0;
+
+    
+   
+}
+
+.portfolio_img_left{
+    position: absolute;
+    left: 36%;
+   
+    
+}
+
+.portfolio_img_center{
+    position: absolute;
+    z-index: 1;
+}
+
+.portfolio_img_right{
+ position: absolute;
+   right: 36%;  
+
+}
+
+.purchase{
+background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+background-color:#2f221d ;
+    padding: 3% 0 3% 0;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.purcase_box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    padding: 0 0 0 5%;
+    justify-content: space-between;
+}
+
+.purchase_title{
+
+color: #ffffff;
+font-family: Raleway;
+font-size: 28px;
+font-weight: 400;
+
+}
+
+.purchase_title span{
+    color: #c7b299;
+}
+
+.purchase_text{
+    display: flex;
+    flex-direction: column;
+}
+
+.purchase_description{
+color: #615855;
+font-family: Montserrat;
+    padding: 1% 0 0 0;
+font-size: 18px;
+font-weight: 300;
+}
+
+.purchase_button{
+width: 170px;
+height: 50px;
+border-bottom: 3px solid #736357;
+border-top: 0;
+ border-left: 0;
+ border-right: 0;
+border-radius: 3px;
+background-color: #998675;
+
+/* Style for "Purchase N" */
+
+color: #ffffff;
+font-family: Raleway;
+font-size: 14px;
+font-weight: 500;
+line-height: 23px;
+text-transform: uppercase;
+}
+
+
+
