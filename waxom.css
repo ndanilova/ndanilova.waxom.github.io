@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0 auto 0 auto ;
     padding: 0;
     box-sizing: border-box;
     max-width: 1920px;
@@ -200,28 +200,32 @@ height: 24px;
 .home_center{
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 95%;
     justify-content: space-between;
-    align-items: center;
-    margin: 320px 0 200px 5%;
+    margin: 200px 0 200px 2.5%;
 }
 
 .home_block{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
     flex-direction: column;
-    width: 39%; 
+    width: 90%; 
     
 }
 
-.home_button_left{
+.home_l_arrow,
+.home_r_arrow{
+    background-color: transparent;
+    border:0;
+    
+}
+
+.home_arrow_left{
      display: flex;
     width: 40px;
     height: 73px;
     justify-content: flex-start;
-    flex-direction: column;
     flex-wrap: wrap;
 }
 
@@ -230,36 +234,40 @@ height: 24px;
     width: 40px;
     height: 73px;
     justify-content: flex-end;
-    flex-direction: column;
     flex-wrap: wrap;
 }
 
 .home_title{
     
-height: 10%;
+width: 500px ; 
+height: 17%;  
 color: #ffffff;
 font-family: Raleway;
 font-size: 36px;
 font-weight: 400;
- padding: 0;
+ padding: 0 ;
+ 
+    
 
 }
 
 h1{
-   
-height: 15%;
+width: 700px ; 
+height: 25%;
 color: #ffffff;
 font-family: "Raleway";
-font-size: 52px;
+font-size: 55px;
 font-weight: 800;
 padding:  0;
+   
 }
 
 
 .home_text{
 text-align: center;
-margin: 18px 0 0 0;
-height: 15%;
+margin: 18px 0 0 17%;
+height: 35%;
+    width: 80%;
 color: #ffffff;
 font-family: Montserrat;
 font-size: 16px;
@@ -270,10 +278,10 @@ line-height: 24px;
 }
 
 .home_get{
-    
-margin: 20px 0 0 33%;
+ line-height: 23px;   
+margin: 20px 0 0 0;
 color: white;
-width: 30%;
+width: 100%;
 height: 53px;
 border-bottom: 3px solid #736357;
 border-top:0;
@@ -281,10 +289,17 @@ border-left:0;
 border-right:0;
 border-radius: 3px;
 background-color: #998675;
-font-family: Raleway;
-font-weight: 500;
-font-size: 14px;   
+
 }
+
+.home_get span{
+    height: 11px;
+    font-family: Raleway;
+font-weight: 800;
+    font-size: 24px; 
+}
+
+
 
 .home_get_button{
     display: flex;
@@ -296,7 +311,8 @@ font-size: 14px;
     align-items: flex-end;
     justify-content: center;
     flex-direction: row;
-    padding: 0 2em 3em 0;
+    padding: 0 0 3em 0;
+    width: 9%;
 }
 
 .little_button1{
@@ -306,6 +322,7 @@ font-size: 14px;
     height: 11px;
     background-color: #979595;
     margin: 0 8px 0 0;
+    opacity: 50%;
         
 }
 
@@ -316,7 +333,7 @@ font-size: 14px;
     height: 11px;
     background-color: #979595;
     margin: 0 8px 0 0;
-        
+       opacity: 50%; 
 }
 
 .little_button3{
@@ -326,7 +343,7 @@ font-size: 14px;
     height: 11px;
     background-color: #979595;
     margin: 0 8px 0 0;
-        
+       opacity: 50%; 
 }
 
 .little_button4{
@@ -336,7 +353,7 @@ font-size: 14px;
     height: 11px;
     background-color: #979595;
     margin: 0 8px 0 0;
-        
+       opacity: 50%; 
 }
 
 .little_button5{
@@ -346,7 +363,7 @@ font-size: 14px;
     height: 11px;
     background-color: #979595;
     
-        
+        opacity: 50%;
 }
 
 .about_us{
@@ -354,9 +371,10 @@ font-size: 14px;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content:space-between;
-    padding: 4% 0 4% 10%;
-    width: 90%;
+    padding: 4% 0 4% 0%;
+    width: 75%;
     background-color: white;
+    align-items: baseline;
 }
 
 .about_us_development,
@@ -366,17 +384,54 @@ font-size: 14px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 23%;
+    align-items: center;
+    width: 25%;
     text-align: center;
     
     
+}
+
+.about_us_development::after{
+    content: '';
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #f1eee9;
+    margin-top: 2em;
+}
+
+.about_us_customization::after{
+    content: '';
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #f1eee9;
+    margin-top: 2em;
+}
+
+.about_us_marketing::after{
+    content: '';
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #f1eee9;
+    margin-top: 2em;
+}
+
+.about_us_design::after{
+    content: '';
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #f1eee9;
+    margin-top: 2em;
 }
 
 .about_us_title{
     color: #555555;
     font-family: Raleway;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 30px;
 }
 
 .about_us img{
@@ -387,7 +442,7 @@ font-size: 14px;
 .about_us_text{
 color: #8c8c8c;
 font-family: Montserrat;
-font-size: 14px;
+font-size: 20px;
 font-weight: 300;
 line-height: 24px;
 }
@@ -533,5 +588,309 @@ line-height: 23px;
 text-transform: uppercase;
 }
 
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1920px;
+}
+
+.projects_title{
+ display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 3% 0 1% 0;
+justify-content: center;
+color: #555555;
+font-family: Raleway;
+font-size: 30px;
+font-weight: 500;  
+}
+
+.projects_text_box{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+color: #8c8c8c;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 300;
+line-height: 28px;
+}
+
+.projects_text{
+    width: 30%;
+}
+
+.product_buttons{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 2% 0 2% 0;
+}
+
+.product_buttons_box{
+    width: 50%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.prod_button{
+    background-color: white;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    color: #8c8c8c;
+    
+height: 25px;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 300;
+line-height: 21px;
+   margin: 0 .5% 0 .5%;
+    padding: 3px 1% 3px 1%;
+}
+
+.project_box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.project_figures{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+       
+}
+
+.product_figure{
+  width: 370px;
+  height: 237px;
+    display: flex;
+    flex-wrap: wrap;
+   margin: 0 0 150px 3%;
+    
+}
 
 
+.product_caption{
+ width: 370px;
+height: 100px;
+background-color: #fbfaf8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    position:relative;
+}
+
+.product_caption::before{
+    content: '';
+    width: 0;
+height: 0;
+border: 15px solid transparent;
+border-bottom: 11px solid #fbfaf8;
+    position: absolute;
+   top: -25px;
+    left: -1px;
+}
+
+.product_caption_span{
+width: 330px;
+color: #c7b299;
+font-family: Raleway;
+font-size: 35px;
+font-weight: 500;
+padding: 25px 20px 0 0;
+}
+
+.product_caption_text{
+width: 330px; 
+color: #d1d1d1;
+font-family: Montserrat;
+font-size: 20px;
+font-weight: 300;
+line-height: 20px;
+    padding: 10px 20px 0 0;
+}
+
+.projects_button{
+    
+
+
+width: 170px;
+height: 50px;
+    border:0;
+border-bottom: 3px solid #736357;
+border-radius: 3px;
+background-color: #998675;
+
+}
+
+.projects_button_span{
+    /* Style for "Load More" */
+width: 170px;
+height: 50px;
+color: #ffffff;
+font-family: Raleway;
+font-size: 24px;
+font-weight: 500;
+line-height: 23px;
+}
+
+
+.presentation{
+    background-image: url(style/images/presentation-background.webp);
+    background-repeat: no-repeat;
+    background-color: #767674;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.presentation_button{
+    background: 0;
+        border: 0;
+    margin-top: 210px;
+}
+
+.presentation_title{
+    /* Style for "Waxom Vide" */
+width: 40%;
+height: 20%;
+color: #ffffff;
+font-family: Raleway;
+font-size: 50px;
+font-weight: 400;
+    padding: 20px 0 20px 0;
+
+}
+
+.presentation_text{
+    /* Style for "Investigat" */
+width: 40%;
+height: 20%;
+color: #ffffff;
+font-family: Montserrat;
+font-size: 26px;
+font-weight: 300;
+line-height: 28px;
+    padding: 0 0 20px 0;
+}
+
+.presentation_span{
+    /* Style for "03:26" */
+width: 40%;
+height: 20%;
+color: #c7b299;
+font-family: Montserrat;
+font-size: 24px;
+font-weight: 400;
+line-height: 24px;
+    padding: 0 0 17% 0;
+}
+
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: white;
+    padding: 50px 50px 0 50px;
+    margin-bottom: -2px;
+}
+
+.features_box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.features_phone{
+    width: 20%;
+}
+
+.statistic{
+    /* Style for "Background" */
+
+background-color: #f4f5f8;
+background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+
+
+}
+
+.feature_text_box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-top: 90px;
+}
+
+.features_title{
+    /* Style for "Excellent" */
+width: 90%;
+color: #555555;
+font-family: Raleway;
+font-size: 50px;
+font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.features_text{
+    /* Style for "Qisi enim" */
+width: 90%;
+color: #8c8c8c;
+font-family: Montserrat;
+font-size: 26px;
+font-weight: 300;
+line-height: 28px;
+    padding-bottom: 20px;
+}
+
+.features_list{
+    width: 90%;
+    padding-left: 80px;
+    list-style: none;
+        
+}
+
+.features_list_item{
+    /* Style for "Nam liber" */
+color: #8c8c8c;
+font-family: Montserrat;
+font-size: 26px;
+font-weight: 300;
+line-height: 32px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.features_list_item::before{
+    content: '';
+    position:absolute;
+    background-image: url(style/images/features_list_style.jpg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 21px;
+    height: 21px;
+    left: -40px;
+    top: -3px;
+    
+}
+
+
+
+.statistic{
+    /* Style for "Background" */
+
+background-color: #f4f5f8;
+background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
