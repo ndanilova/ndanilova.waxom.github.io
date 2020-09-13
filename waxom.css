@@ -8,6 +8,13 @@
 
 @font-face{
     font-family: Montserrat;
+    src: url(style/fonts/monsterrat/Montserrat-ExtraLight.woff);
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: Montserrat;
     src: url(style/fonts/monsterrat/Montserrat-Light.woff);
     font-weight: 300;
     font-style: normal;
@@ -977,10 +984,121 @@ line-height: 32px;
     
 }
 
-
-
 .statistic{
-    /* Style for "Background" */
-
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+    justify-content: space-between;
 background-color: #f4f5f8;
 background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+    padding: 70px 280px 70px 280px ;
+   
+}
+
+.statistic_boxes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 140px;
+    height: 200px;
+    margin: 0 0 20px 30px;
+   text-align: center;
+    
+}
+
+.statistic_span_number{
+ margin-top: 20px;
+margin-bottom: 20px;
+color: #ffffff;
+font-family: Montserrat;
+font-size: 48px;
+font-weight: 200;
+line-height: 36px; 
+}
+
+.statistic_span_text {
+color: #c7b299;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 300;
+line-height: 20px;
+text-transform: uppercase;
+}
+
+.satisfied{
+    position: relative;
+}
+
+.cups{
+    position: relative;
+}
+
+.blog{
+    position: relative;
+}
+
+.likes{
+    position: relative;
+}
+
+.launched{
+    position: relative;
+}
+
+.satisfied::after{
+    content: '';
+    position:absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+   bottom: 23px;
+    left: 53px;
+    
+}
+
+.cups::after{
+    content: '';
+    position:absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+   bottom: 23px;
+    left: 53px;
+         
+}
+
+.blog::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+   bottom: 23px;
+    left: 53px;
+}
+
+.likes::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+   bottom: 23px;
+    left: 53px;
+}
+
+.launched::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+   bottom: 23px;
+    left: 53px;
+}
+    
+
+
+
+
+
