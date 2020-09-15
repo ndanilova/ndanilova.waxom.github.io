@@ -1621,6 +1621,7 @@ line-height: 20px;
     margin-bottom: 20px;
 }
 
+
 .twitter{
     width: 272px;
     margin-bottom: 20px;
@@ -1672,6 +1673,15 @@ line-height: 20px;
    position: relative; 
 }
 
+.lorem:hover span{
+    color: #fff;
+}
+
+.lorem:hover p{
+    color: wheat;
+}
+
+
 .lorem::after{
 content: '';
     position:absolute;
@@ -1696,6 +1706,14 @@ background-color: #252525;
     left: -1px;
 }
 
+.diam:hover span{
+    color: #fff;
+}
+
+.diam:hover p{
+    color: wheat;
+}
+
 .claritas{
     position: relative;
 }
@@ -1710,6 +1728,13 @@ background-color: #252525;
     left: -1px;
 }
 
+.claritas:hover span{
+    color: #fff;
+}
+
+.claritas:hover p{
+    color: wheat;
+}
 
 
 
@@ -1760,14 +1785,39 @@ line-height: 20px;
     margin-bottom: 20px;
 }
 
+.waxom:hover p{
+    color: #fff;
+}
+
+.waxom:hover span{
+    color: wheat;
+}
+
 .envato{
     position: relative;
    margin-bottom: 20px;
 }
 
+.envato:hover p{
+    color: #fff;
+}
+
+.envato:hover span{
+    color: wheat;
+}
+
+
 .bit{
     position: relative;
     
+}
+
+.bit:hover p{
+    color: #fff;
+}
+
+.bit:hover span{
+    color: wheat;
 }
   
 .waxom::after{
@@ -1865,6 +1915,10 @@ line-height: 20px;
     position:relative;
 }
 
+.bottom_privacy:hover{
+    color: wheat;
+}
+
 .bottom_privacy::after{
      content: '';
     position:absolute;
@@ -1876,9 +1930,13 @@ background-color: #252525;
 }
 
 .bottom_faq{
-color: #c7b299;
+color: #555555;
     margin-right: 20px;
     position:relative;
+}
+
+.bottom_faq:hover{
+    color: wheat;
 }
 
 .bottom_faq::after{
@@ -1897,6 +1955,10 @@ font-family: Montserrat;
 font-size: 13px;
 font-weight: 300;
 line-height: 20px;3
+}
+
+.bottom_support:hover{
+    color: wheat;
 }
 
 .bottom_designed{
