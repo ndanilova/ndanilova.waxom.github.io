@@ -633,8 +633,8 @@ background-color:#2f221d ;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 70%;
-    padding: 0 0 0 5%;
+    width: 100%;
+    padding: 0 0 0 40px;
     justify-content: space-between;
 }
 
@@ -654,6 +654,10 @@ font-weight: 400;
 .purchase_text{
     display: flex;
     flex-direction: column;
+}
+
+.purchase_title_link{
+    text-decoration: none;
 }
 
 .purchase_description{
@@ -682,6 +686,10 @@ font-size: 14px;
 font-weight: 500;
 line-height: 23px;
 text-transform: uppercase;
+}
+
+.purchase_button:hover{
+    background-color: #736357;
 }
 
 .projects{
@@ -746,6 +754,10 @@ font-weight: 300;
 line-height: 21px;
    margin: 0 .5% 0 .5%;
     padding: 3px 1% 3px 1%;
+}
+.prod_button:hover{
+  background-color: #998675;
+    color:#fff;
 }
 
 .project_box{
@@ -816,10 +828,177 @@ line-height: 20px;
     padding: 10px 20px 0 0;
 }
 
-.projects_button{
+.projects_img{
+    position: relative;
+}
+
+.project_overlay{
+    display: none;
+    position: absolute;
+    width: 370px;
+    height: 237px;
+}
+
+.project_overlay_item_left{
+    position: absolute;
+    top: 110px;
+    left: 140px;
+}
+
+.project_overlay_item_right{
+    position: absolute;
+    top: 110px;
+    left: 200px;
+}
+
+
+
+.projects_phone:hover .project_overlay{
+   background-color: rgba(17, 17, 17, 0.7);
+    display: block;
     
+}
+
+.project_overlay path:hover{
+    fill: #c7b299;
+}
+
+.projects_phone:hover .product_caption_text{
+    color: #b4a18b
+}
+
+.projects_phone:hover .product_caption_span{
+color: #fff;
+}
+
+.projects_phone:hover .product_caption{
+    background-color: #362f2d; 
+}
+
+.projects_phone:hover .product_caption::before{
+  border-bottom-color: #362f2d;
+}
 
 
+.projects_dark_rock:hover .project_overlay{
+   background-color: rgba(17, 17, 17, 0.7);
+    display: block;
+    
+}
+
+
+
+.projects_dark_rock:hover .product_caption_text{
+    color: #b4a18b
+}
+
+.projects_dark_rock:hover .product_caption_span{
+color: #fff;
+}
+
+.projects_dark_rock:hover .product_caption{
+    background-color: #362f2d; 
+}
+
+.projects_dark_rock:hover .product_caption::before{
+  border-bottom-color: #362f2d;
+}
+
+
+.projects_paper:hover .project_overlay{
+   background-color: rgba(17, 17, 17, 0.7);
+    display: block; 
+}
+
+.projects_paper:hover .product_caption_text{
+    color: #b4a18b
+}
+
+.projects_paper:hover .product_caption_span{
+color: #fff;
+}
+
+.projects_paper:hover .product_caption{
+    background-color: #362f2d; 
+}
+
+.projects_paper:hover .product_caption::before{
+  border-bottom-color: #362f2d;
+}
+
+
+
+.projects_green_rock:hover .project_overlay{
+   background-color: rgba(17, 17, 17, 0.7);
+    display: block; 
+}
+
+.projects_green_rock:hover .product_caption_text{
+    color: #b4a18b
+}
+
+.projects_green_rock:hover .product_caption_span{
+color: #fff;
+}
+
+.projects_green_rock:hover .product_caption{
+    background-color: #362f2d; 
+}
+
+.projects_green_rock:hover .product_caption::before{
+  border-bottom-color: #362f2d;
+}
+
+
+
+.projects_book:hover .project_overlay{
+   background-color: rgba(17, 17, 17, 0.7);
+    display: block; 
+}
+
+.projects_book:hover .product_caption_text{
+    color: #b4a18b
+}
+
+.projects_book:hover .product_caption_span{
+color: #fff;
+}
+
+.projects_book:hover .product_caption{
+    background-color: #362f2d; 
+}
+
+.projects_book:hover .product_caption::before{
+  border-bottom-color: #362f2d;
+}
+
+
+
+.projects_light_rock:hover .project_overlay{
+   background-color: rgba(17, 17, 17, 0.7);
+    display: block; 
+}
+
+.projects_light_rock:hover .product_caption_text{
+    color: #b4a18b
+}
+
+.projects_light_rock:hover .product_caption_span{
+color: #fff;
+}
+
+.projects_light_rock:hover .product_caption{
+    background-color: #362f2d; 
+}
+
+.projects_light_rock:hover .product_caption::before{
+  border-bottom-color: #362f2d;
+}
+
+
+
+
+.projects_button{
 width: 170px;
 height: 50px;
     border:0;
@@ -827,6 +1006,10 @@ border-bottom: 3px solid #736357;
 border-radius: 3px;
 background-color: #998675;
 
+}
+
+.projects_button:hover{
+    background-color: #736357;
 }
 
 .projects_button_span{
@@ -975,6 +1158,8 @@ line-height: 32px;
     top: 4px;
     
 }
+
+
 
 .statistic{
 display: flex;
@@ -1141,6 +1326,40 @@ margin-bottom: 20px;
     position: relative;
 }
 
+.feet_img{
+    position: relative;
+}
+
+.posts_overlay{
+    top: 0;
+    position: absolute;
+    width: 368px;
+    height: 220px;
+    display: none;
+}
+
+.posts_feet:hover{
+    background-color: #362f2d;
+}
+.posts_feet:hover .posts_box_title{
+    color: #b4a18b;
+}
+
+.posts_feet:hover .posts_box_text{
+    color: #fff;
+}
+
+.posts_feet:hover .posts_overlay{
+    display: block;
+    background-color: rgba(17, 17, 17, 0.7);
+   
+}
+
+.posts_feet:hover .recents_date{
+    background-image: linear-gradient(to bottom, #c7b299 55%, #a48d72 45%);
+    background-color: #c7b299;
+}
+
 .posts_computer{
     width: 370px;
 height: 395px;
@@ -1150,6 +1369,29 @@ background-color: #ffffff;
     position: relative;
 }
 
+.posts_computer:hover{
+    background-color: #362f2d;
+}
+.posts_computer:hover .posts_box_title{
+    color: #b4a18b;
+}
+
+.posts_computer:hover .posts_box_text{
+    color: #fff;
+}
+
+.posts_computer:hover .posts_overlay{
+    display: block;
+    background-color: rgba(17, 17, 17, 0.7);
+   
+}
+
+.posts_computer:hover .recents_date{
+    background-image: linear-gradient(to bottom, #c7b299 55%, #a48d72 45%);
+    background-color: #c7b299;
+}
+
+
 .posts_ship{
     width: 370px;
 height: 395px;
@@ -1158,6 +1400,30 @@ background-color: #ffffff;
     margin-bottom: 20px;
     position: relative;
 }
+
+
+.posts_ship:hover{
+    background-color: #362f2d;
+}
+.posts_ship:hover .posts_box_title{
+    color: #b4a18b;
+}
+
+.posts_ship:hover .posts_box_text{
+    color: #fff;
+}
+
+.posts_ship:hover .posts_overlay{
+    display: block;
+    background-color: rgba(17, 17, 17, 0.7);
+   
+}
+
+.posts_ship:hover .recents_date{
+    background-image: linear-gradient(to bottom, #c7b299 55%, #a48d72 45%);
+    background-color: #c7b299;
+}
+
 
 
 .ship_box,
@@ -1218,7 +1484,7 @@ font-weight: 300;
     flex-direction: column;
     padding: 10px 0 0 0;
     background-image: linear-gradient(to bottom, #363636 55%, #252525 45%);
- 
+    background-color: #363636;
     width: 50px;
     height: 60px;
     border-radius: 5px;
@@ -1260,6 +1526,7 @@ line-height: 20px;
 height: 22px;
     background: 0;
     border: 0;
+   margin-right: 5px;
 }
 
 
@@ -1268,6 +1535,15 @@ height: 22px;
 height: 22px;
      background: 0;
     border: 0;
+    margin-left: 5px;
+}
+
+.posts_button_svg_left:hover{
+    fill: #c7b299;
+}
+
+.posts_button_svg_right:hover{
+    fill: #c7b299;
 }
 
 .partners{
