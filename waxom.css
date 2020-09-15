@@ -75,6 +75,11 @@
     text-decoration: none;
 }
 
+.line:hover{
+   color: #998675;
+    fill: #998675;
+}
+
 .home_waxom_logo{
     height: 56px;
     width: 181px;
@@ -244,6 +249,16 @@ height: 24px;
     height: 73px;
     justify-content: flex-start;
     flex-wrap: wrap;
+   
+    
+}
+
+.home_arrow{
+    
+}
+
+.home_arrow:hover{
+    fill: #d3c1ad;
 }
 
 .home_arrow_right{
@@ -303,6 +318,10 @@ border-right:0;
 border-radius: 3px;
 background-color: #998675;
  
+}
+
+.home_get:hover{
+    background-color: #736357;
 }
 
 .home_get span{
@@ -380,13 +399,18 @@ font-weight: 500;
         opacity: 50%;
 }
 
+.home_little:hover{
+    background-color: transparent;
+    border: 2px solid #d3c1ad;
+}
+
 .about_us{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content:space-between;
     padding: 4% 0 4% 0%;
-    width: 75%;
+    width: 85%;
     background-color: white;
     align-items: baseline;
 }
@@ -406,6 +430,55 @@ font-weight: 500;
     
     
 }
+
+.about_us_design:hover::after{
+     background-color: #c7b299;
+}
+
+.about_us_design:hover h3{
+    color: #c7b299;
+}
+
+.about_us_design:hover path{
+    fill: #c7b299;
+}
+
+.about_us_development:hover::after{
+    background-color: #c7b299;
+} 
+
+.about_us_development:hover h3{
+    color: #c7b299;
+}
+
+.about_us_development:hover path{
+    fill: #c7b299;
+}
+
+.about_us_customization:hover::after{
+    background-color: #c7b299;
+} 
+
+.about_us_customization:hover h3{
+    color: #c7b299;
+}
+
+.about_us_customization:hover path{
+    fill: #c7b299;
+}
+
+.about_us_marketing:hover::after{
+    background-color: #c7b299;
+} 
+
+.about_us_marketing:hover h3{
+    color: #c7b299;
+}
+
+.about_us_marketing:hover path{
+    fill: #c7b299;
+}
+
 
 .about_us_development::after{
     content: '';
@@ -450,9 +523,16 @@ font-weight: 500;
     font-size: 22px;
 }
 
-.about_us img{
+.about_us path{
     padding-bottom: 7%;
     fill: #555555;
+}
+
+.design_img,
+.development_img,
+.customization_img,
+.marketing_img{
+    margin-bottom: 10px;
 }
 
 .about_us_text{
